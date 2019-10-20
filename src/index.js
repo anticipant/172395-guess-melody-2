@@ -2,15 +2,20 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import App from "./components/app/App";
 
+const settings = {
+  gameTime: 5,
+  errorCount: 3,
+};
+
 const init = () => {
-  return (
-    <App/>
+  const rootElement = document.querySelector(`#root`);
+
+  ReactDOM.render(
+      <App
+        settings = { settings }
+      />,
+      rootElement
   );
 };
 
-const rootElement = document.querySelector(`#root`);
-
-ReactDOM.render(
-    init(),
-    rootElement
-);
+init();
