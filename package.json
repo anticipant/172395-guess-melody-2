@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "eslint src/ --ext .js,.jsx",
     "test": "npm run eslint",
-    "text-fix": "npx eslint src/ --ext .js,.jsx --fix",
+    "fix-eslint": "npx eslint src/ --ext .js,.jsx --fix",
     "build": "webpack --mode production",
     "start": "webpack-dev-server"
   },
@@ -26,6 +26,7 @@
     "node": "10"
   },
   "dependencies": {
+    "prop-types": "15.7.2",
     "react": "16.10.2",
     "react-dom": "16.10.2"
   }
