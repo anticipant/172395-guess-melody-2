@@ -5,6 +5,7 @@ import App from "./components/app/App";
 const settings = {
   gameTime: 5,
   errorCount: 3,
+  onClickHandler: () => {},
 };
 
 const init = () => {
