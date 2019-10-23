@@ -8,6 +8,7 @@ const App = (props) => {
     <WelcomeScreen
       time = { props.settings.gameTime }
       error = { props.settings.errorCount }
+      onClickHandler = { props.settings.onClickHandler }
     />
   );
 };
