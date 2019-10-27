@@ -6,7 +6,7 @@ const WelcomeScreen = (props) => {
     <section className="welcome">
       <div className="welcome__logo"><img src="img/melody-logo.png" alt="Угадай мелодию" width="186" height="83"/></div>
       <button
-        onClick={props.onClickHandler}
+        onClick={props.onStartButtonClick}
         className="welcome__button"
       >
         <span className="visually-hidden">Начать игру</span>
@@ -25,7 +25,7 @@ const WelcomeScreen = (props) => {
 WelcomeScreen.propTypes = {
   time: PropTypes.number.isRequired,
   error: PropTypes.number.isRequired,
-  onClickHandler: PropTypes.func.isRequired,
+  onStartButtonClick: PropTypes.func.isRequired,
 };
 
 export default WelcomeScreen;
