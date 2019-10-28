@@ -86,6 +86,7 @@ exports[`GameGenre correctly renders after relaunch 1`] = `
             className="game__input visually-hidden"
             id="answer-0"
             name="answer"
+            onClick={[Function]}
             type="checkbox"
             value="answer-0"
           />
@@ -116,6 +117,7 @@ exports[`GameGenre correctly renders after relaunch 1`] = `
             className="game__input visually-hidden"
             id="answer-1"
             name="answer"
+            onClick={[Function]}
             type="checkbox"
             value="answer-1"
           />
@@ -146,6 +148,7 @@ exports[`GameGenre correctly renders after relaunch 1`] = `
             className="game__input visually-hidden"
             id="answer-2"
             name="answer"
+            onClick={[Function]}
             type="checkbox"
             value="answer-2"
           />

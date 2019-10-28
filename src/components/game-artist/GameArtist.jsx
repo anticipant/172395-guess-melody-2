@@ -6,8 +6,8 @@ const GameArtist = ({question, screenIndex, onAnswer}) => {
     answers,
   } = question;
 
-  const onClickHandler = (evt) => {
-    const answer = evt.target.value;
+  const onChangeHandler = (evt) => {
+    const answer = [evt.target.value];
     onAnswer(answer);
   };
 
@@ -43,7 +43,7 @@ const GameArtist = ({question, screenIndex, onAnswer}) => {
           </div>
         </div>
 
-        <form className="game__artist" onChange={onClickHandler}>
+        <form className="game__artist" onChange={onChangeHandler}>
           {answers.map((it, i) => {
             return (
               <div key={`${screenIndex}-answer-${i}`} className="artist">
